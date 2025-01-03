@@ -1,2 +1,2 @@
 # bginfo
-linux desktop background information about the system
+Linux desktop background information about the system
