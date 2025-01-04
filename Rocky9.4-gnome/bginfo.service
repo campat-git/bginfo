@@ -1,0 +1,13 @@
+[Unit]
+Description=bginfo service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Restart=always
+RestartSec=1
+ExecStart=sh -c "/usr/local/bin/bginfo/bginfo.sh"
+
+[Install]
+WantedBy=multi-user.target
