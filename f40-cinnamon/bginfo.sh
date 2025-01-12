@@ -43,7 +43,7 @@ if [ -n "$desktop_user" ]; then
      fi
 
 
-      cat /tmp/sys.info  | convert -pointsize 40 -gravity center -background none -fill black label:@- /tmp/info.png
+      cat /tmp/sys.info  | convert -pointsize 20 -gravity center -background none -fill black label:@- /tmp/info.png
       cp -f $real_image_filename.original  /tmp/
       real_image_filename_basename=$(basename "$real_image_filename.original")
       composite -gravity center /tmp/info.png /tmp/$real_image_filename_basename /tmp/merged.png
